@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>青开君的学习小站</title>
+  <title>青开君の学习小站</title>
   
   <subtitle>天行健，君子以自强不息；地势坤，君子以厚德载物</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-01T15:50:58.885Z</updated>
+  <updated>2021-11-02T12:41:20.996Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,12 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
+    <title>Hexo-Git博客搭建：基本配置</title>
     <link href="http://example.com/2021/11/01/test/"/>
     <id>http://example.com/2021/11/01/test/</id>
     <published>2021-11-01T15:50:58.000Z</published>
-    <updated>2021-11-01T15:50:58.885Z</updated>
+    <updated>2021-11-02T12:41:20.996Z</updated>
     
+    <content type="html"><![CDATA[<p>基于Hexo和GitHub创建个人博客，总的来说分为三步（MAC版）：</p><ol><li><p>本地配置Hexo，生成静态博客页</p></li><li><p>创建GitHub page</p></li><li><p>将本地Hexo部署到GitHub</p></li></ol><p>[TOC]</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先检查是否安装过Node.js和Git，输入<code>node -v</code>    、<code> npm -v</code>和<code>git --version</code>，若出现版本号则已经安装好了。</p><p>下载Node.js：<a href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></p><p>安装Git（简单方式是安装xcode）： <code>xcode-select --install</code></p><h2 id="本地配置Hexo"><a href="#本地配置Hexo" class="headerlink" title="本地配置Hexo"></a>本地配置Hexo</h2><p>在本地根目录下建一个博客文件夹<code>Jingyan-Z</code>，打开terminal进入此目录<code>cd Jingyan-Z </code></p><p>输入<code>npm i hexo-cli -g</code>安装Hexo</p><p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p><p>输入<code>hexo init</code>初始化文件夹，接着输入<code>npm install</code>安装必备的组件。</p><p>输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>打开本地服务器，浏览器打开<a href="http://localhost:4000/">http://localhost:4000/</a> 可以预览博客，<code>ctrl+c</code>关掉本地服务器。</p><h2 id="建立Github仓库"><a href="#建立Github仓库" class="headerlink" title="建立Github仓库"></a>建立Github仓库</h2><p>注册github账号，新建一个仓库，仓库名需要和github用户名一致，后面加git.io，比如我的用户名是<strong>xxx</strong>，仓库名则是<strong>xxx.git.io</strong>。</p><p>仓库建成后，点击仓库中的点击<code>Settings</code>，向下拉到最后有个<code>GitHub Pages</code>，点击<code>Choose a theme</code>选择一个主题。然后再等一会儿就能直接搜索网页xxx.git.io。</p><h2 id="连接Hexo和Github"><a href="#连接Hexo和Github" class="headerlink" title="连接Hexo和Github"></a>连接Hexo和Github</h2><h3 id="生成SSH"><a href="#生成SSH" class="headerlink" title="生成SSH"></a>生成SSH</h3><p>打开terminal，回到根目录，输入GitHub用户名和注册邮箱：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;xxx&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;xxx@email.com&quot;</span></span><br></pre></td></tr></table></figure><p>然后生成密钥SSH key：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;792321264@qq.com&quot;</span></span><br></pre></td></tr></table></figure><p>打开GitHub，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH。</p><p>在终端输入：<code>cat ~/.ssh/id_rsa.pub</code>，将输出的私钥信息复制到框中，点击确定保存。</p><p>输入<code>ssh -T git@github.com</code>，如果出现你的用户名，那就成功了。</p><h3 id="部署Hexo到GitHub"><a href="#部署Hexo到GitHub" class="headerlink" title="部署Hexo到GitHub"></a>部署Hexo到GitHub</h3><p>打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。</p><p>修改最后一行的配置：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/godweiyang/xxx.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>repository修改为你自己的github项目地址。</p><p>在terminal博客根目录下安装deploy-git，也就是部署命令，这样才能将Hexo部署到GitHub。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>输入:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>就能将博客内容push到github中渲染成网页。</p><h3 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h3><p>在terminal博客根目录下输入：<code>hexo new post &quot;article title&quot;</code></p><p>然后push到github：<code>hexo clean</code> <code>hexo g</code> <code>hexo d</code> </p><h2 id="踩坑指南"><a href="#踩坑指南" class="headerlink" title="踩坑指南"></a>踩坑指南</h2><h3 id="添加SSH-Keys"><a href="#添加SSH-Keys" class="headerlink" title="添加SSH Keys"></a>添加SSH Keys</h3><p>首先检查本地是否存在SSH Keys: <code>cd ~/.ssh</code></p><p>若存在，则备份和删除已经存在的SSH Keys：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ls</span><br><span class="line">config id_rsa id_rsa.pub known_hosts</span><br><span class="line">mkdir key_backup</span><br><span class="line">cp id_rsa* key_backup</span><br><span class="line">rm id_rsa*</span><br></pre></td></tr></table></figure><p>生成新的SSH Key：(在询问输入存储 key 的文件 (file in which to save the key) 时，直接按回车，然后输入密码。)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;youremail@youremail.com&quot;</span></span><br><span class="line">Genereting public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key</span><br><span class="line">(/Users/your_user_directory/.ssh/id_rsa):&lt;press enter&gt;</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;enter a passphrase&gt;</span><br><span class="line">Enter same passphrase again:&lt;enter passphrase again&gt;</span><br></pre></td></tr></table></figure><h3 id="主题butterfly报错"><a href="#主题butterfly报错" class="headerlink" title="主题butterfly报错"></a>主题butterfly报错</h3><ol><li>更换butterfly主题后报错：extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug</li></ol><p>解决办法：</p><p>打开terminal进入博客目录，输入：<code>npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</code></p><p>然后输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><h3 id="Refernce"><a href="#Refernce" class="headerlink" title="Refernce"></a>Refernce</h3><p><a href="https://zhuanlan.zhihu.com/p/35668237">https://zhuanlan.zhihu.com/p/35668237</a></p><p><a href="http://www.c-hasel.cn/2019/11/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/#tips">http://www.c-hasel.cn/2019/11/29/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/#tips</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;基于Hexo和GitHub创建个人博客，总的来说分为三步（MAC版）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;本地配置Hexo，生成静态博客页&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建GitHub page&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;将本地Hexo部署到GitHub&lt;/p&gt;</summary>
+      
     
     
     
