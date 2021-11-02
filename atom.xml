@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-02T12:41:20.996Z</updated>
+  <updated>2021-11-02T19:59:31.240Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,9 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>博客主题设置（Butterfly）</title>
+    <link href="http://example.com/2021/11/02/theme-settings/"/>
+    <id>http://example.com/2021/11/02/theme-settings/</id>
+    <published>2021-11-02T19:50:46.000Z</published>
+    <updated>2021-11-02T19:59:31.240Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先将主题中的<code>_config.yml</code>拷贝至博客根目录，并重命名为<code>_config.butterfly.yml</code></p><p>在<code>_config.yml</code>中设置博客名、作者、语言等：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 青开君の学习小站</span><br><span class="line">subtitle: &#x27;天行健，君子以自强不息；地势坤，君子以厚德载物&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: 青开君</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure><p>在<code>_config.butterfly.yml</code>中设置主页subtitle：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">subtitle:</span><br><span class="line">  enable: true</span><br><span class="line">  # Typewriter Effect (打字效果)</span><br><span class="line">  effect: true</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;首先将主题中的&lt;code&gt;_config.yml&lt;/code&gt;拷贝至博客根目录，并重命名为&lt;code&gt;_config.butterfly.yml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;_config.yml&lt;/code&gt;中设置博客名、作者、语言等：&lt;/p&gt;
+&lt;figur</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hexo-Git博客搭建：基本配置</title>
-    <link href="http://example.com/2021/11/01/test/"/>
-    <id>http://example.com/2021/11/01/test/</id>
+    <link href="http://example.com/2021/11/01/hexo-github-settings/"/>
+    <id>http://example.com/2021/11/01/hexo-github-settings/</id>
     <published>2021-11-01T15:50:58.000Z</published>
     <updated>2021-11-02T12:41:20.996Z</updated>
     
@@ -35,39 +57,6 @@
 &lt;li&gt;&lt;p&gt;创建GitHub page&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;将本地Hexo部署到GitHub&lt;/p&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>article title</title>
-    <link href="http://example.com/2021/10/31/article-title/"/>
-    <id>http://example.com/2021/10/31/article-title/</id>
-    <published>2021-10-31T19:29:53.000Z</published>
-    <updated>2021-11-01T14:55:42.378Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/10/31/hello-world/"/>
-    <id>http://example.com/2021/10/31/hello-world/</id>
-    <published>2021-10-31T18:42:58.867Z</published>
-    <updated>2021-10-31T18:42:58.867Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
       
     
     
