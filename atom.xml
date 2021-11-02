@@ -3,11 +3,11 @@
   <title>青开君の学习小站</title>
   
   <subtitle>天行健，君子以自强不息；地势坤，君子以厚德载物</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://jingyan-z.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2021-11-02T19:59:31.240Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://jingyan-z.github.io/"/>
+  <updated>2021-11-02T20:23:38.055Z</updated>
+  <id>http://jingyan-z.github.io/</id>
   
   <author>
     <name>青开君</name>
@@ -18,19 +18,17 @@
   
   <entry>
     <title>博客主题设置（Butterfly）</title>
-    <link href="http://example.com/2021/11/02/theme-settings/"/>
-    <id>http://example.com/2021/11/02/theme-settings/</id>
+    <link href="http://jingyan-z.github.io/2021/11/02/theme-settings/"/>
+    <id>http://jingyan-z.github.io/2021/11/02/theme-settings/</id>
     <published>2021-11-02T19:50:46.000Z</published>
-    <updated>2021-11-02T19:59:31.240Z</updated>
+    <updated>2021-11-02T20:23:38.055Z</updated>
     
-    <content type="html"><![CDATA[<p>首先将主题中的<code>_config.yml</code>拷贝至博客根目录，并重命名为<code>_config.butterfly.yml</code></p><p>在<code>_config.yml</code>中设置博客名、作者、语言等：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 青开君の学习小站</span><br><span class="line">subtitle: &#x27;天行健，君子以自强不息；地势坤，君子以厚德载物&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: 青开君</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure><p>在<code>_config.butterfly.yml</code>中设置主页subtitle：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">subtitle:</span><br><span class="line">  enable: true</span><br><span class="line">  # Typewriter Effect (打字效果)</span><br><span class="line">  effect: true</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h2><p>首先将主题中的<code>_config.yml</code>拷贝至博客根目录，并重命名为<code>_config.butterfly.yml</code></p><p>在<code>_config.yml</code>中设置博客名、作者、语言等：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 青开君の学习小站</span><br><span class="line">subtitle: &#x27;天行健，君子以自强不息；地势坤，君子以厚德载物&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: 青开君</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure><p>URL改成自己的网址，permalink就是文章发布时网址的格式</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: http://jingyan-z.github.io</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: true # Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span><br><span class="line">  trailing_html: true # Set to false to remove trailing &#x27;.html&#x27; from permalinks</span><br></pre></td></tr></table></figure><p><code>theme</code>就是选择主题，也就是在<code>theme</code>这个文件夹下，在官网有很多<a href="https://hexo.io/themes/">主题</a>，可以自行下载放在<code>theme</code>这个文件夹下，在修改主配置文件的<code>theme</code>参数就可以了，默认安装的是<code>lanscape</code>这个主题。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: Butterfly</span><br></pre></td></tr></table></figure><h3 id="设置subtitle"><a href="#设置subtitle" class="headerlink" title="设置subtitle"></a>设置subtitle</h3><p>在<code>_config.butterfly.yml</code>中设置主页subtitle：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">subtitle:</span><br><span class="line">  enable: true</span><br><span class="line">  # Typewriter Effect (打字效果)</span><br><span class="line">  effect: true</span><br></pre></td></tr></table></figure><h3 id="建立标签页、分类页："><a href="#建立标签页、分类页：" class="headerlink" title="建立标签页、分类页："></a>建立标签页、分类页：</h3><p>在博客根目录输入：<code>hexo new page tags</code>，然后在找到<code>source/tags/index.md</code>这个文件，修改这个文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">tite: 标签</span><br><span class="line">date: 2019-12-1 00:00:00</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>分类页：<code>hexo new page categories</code></p><h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><p>修改站点配置文件<code>_config.yml</code>的<code>language</code>参数</p><p>默认语言是en</p><p>主题支持三种语言</p><ul><li>default(en)</li><li>zh-CN(简体中文)</li><li>zh-TW(繁体中文)</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;首先将主题中的&lt;code&gt;_config.yml&lt;/code&gt;拷贝至博客根目录，并重命名为&lt;code&gt;_config.butterfly.yml&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;在&lt;code&gt;_config.yml&lt;/code&gt;中设置博客名、作者、语言等：&lt;/p&gt;
-&lt;figur</summary>
+    <summary type="html">&lt;h2 id=&quot;基本设置&quot;&gt;&lt;a href=&quot;#基本设置&quot; class=&quot;headerlink&quot; title=&quot;基本设置&quot;&gt;&lt;/a&gt;基本设置&lt;/h2&gt;&lt;p&gt;首先将主题中的&lt;code&gt;_config.yml&lt;/code&gt;拷贝至博客根目录，并重命名为&lt;code&gt;_config.but</summary>
       
     
     
@@ -40,8 +38,8 @@
   
   <entry>
     <title>Hexo-Git博客搭建：基本配置</title>
-    <link href="http://example.com/2021/11/01/hexo-github-settings/"/>
-    <id>http://example.com/2021/11/01/hexo-github-settings/</id>
+    <link href="http://jingyan-z.github.io/2021/11/01/hexo-github-settings/"/>
+    <id>http://jingyan-z.github.io/2021/11/01/hexo-github-settings/</id>
     <published>2021-11-01T15:50:58.000Z</published>
     <updated>2021-11-02T12:41:20.996Z</updated>
     
