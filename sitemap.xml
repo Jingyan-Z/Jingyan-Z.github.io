@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jingyan-z.github.io/2025/07/11/huashicaikeng/</loc>
+    <loc>https://jingyan-z.github.io/2021/11/01/hexo-github-settings/</loc>
+    
+    <lastmod>2025-07-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jingyan-z.github.io/2021/11/02/theme-settings/</loc>
+    
+    <lastmod>2025-07-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jingyan-z.github.io/2022/01/10/anaconda-settings/</loc>
     
     <lastmod>2025-07-11</lastmod>
     
@@ -16,23 +30,9 @@
   </url>
   
   <url>
-    <loc>https://jingyan-z.github.io/2022/04/10/anaconda-settings/</loc>
+    <loc>https://jingyan-z.github.io/2022/06/01/huashicaikeng/</loc>
     
     <lastmod>2025-07-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jingyan-z.github.io/2021/11/02/theme-settings/</loc>
-    
-    <lastmod>2022-03-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jingyan-z.github.io/2021/11/01/hexo-github-settings/</loc>
-    
-    <lastmod>2022-03-06</lastmod>
     
   </url>
   
