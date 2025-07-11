@@ -6,7 +6,7 @@
   <link href="https://jingyan-z.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingyan-z.github.io/"/>
-  <updated>2025-07-11T05:59:44.916Z</updated>
+  <updated>2025-07-11T06:09:14.105Z</updated>
   <id>https://jingyan-z.github.io/</id>
   
   <author>
@@ -17,12 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>NLP-huggingface-guide</title>
+    <link href="https://jingyan-z.github.io/2025/07/11/NLP-huggingface-guide/"/>
+    <id>https://jingyan-z.github.io/2025/07/11/NLP-huggingface-guide/</id>
+    <published>2025-07-11T06:09:14.000Z</published>
+    <updated>2025-07-11T06:09:14.105Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>花式踩坑指南</title>
     <link href="https://jingyan-z.github.io/2025/07/11/huashicaikeng/"/>
     <id>https://jingyan-z.github.io/2025/07/11/huashicaikeng/</id>
     <published>2025-07-11T05:58:59.000Z</published>
-    <updated>2025-07-11T05:59:44.916Z</updated>
+    <updated>2025-07-11T06:11:45.419Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="1-python加载超大数据集"><a href="#1-python加载超大数据集" class="headerlink" title="1. python加载超大数据集"></a>1. python加载超大数据集</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chunks = pd.read_csv(input_csv_path, encoding=<span class="string">&quot;utf-8&quot;</span>, chunksize=<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-python加载超大数据集&quot;&gt;&lt;a href=&quot;#1-python加载超大数据集&quot; class=&quot;headerlink&quot; title=&quot;1. python加载超大数据集&quot;&gt;&lt;/a&gt;1. python加载超大数据集&lt;/h2&gt;&lt;figure class=&quot;high</summary>
+      
     
     
     
